@@ -26,6 +26,11 @@ import de.dustboystudios.jarfinder.thread.JarFinderThread.JarFinderThreadFinishe
 public class MainWindow extends JFrame implements ActionListener, JarFinderThreadFinishedListener
 {
 	/**
+	 * serialVersionUID
+	 */
+	private static final long serialVersionUID = 4138018760054153432L;
+
+	/**
 	 * The field for the class name
 	 */
 	private JTextField nameField;

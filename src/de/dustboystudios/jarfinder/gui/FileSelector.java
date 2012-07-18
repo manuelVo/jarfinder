@@ -11,10 +11,26 @@ import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+/**
+ * A textbox with a browse button to select a file
+ *
+ * @author Manuel Vögele
+ */
 public class FileSelector extends JPanel implements ActionListener
 {
+	/**
+	 * serialVersionUID
+	 */
+	private static final long serialVersionUID = -9091708971005977150L;
+	
+	/**
+	 * The text field for the file name
+	 */
 	private JTextField textField;
 
+	/**
+	 * Initializes a new FileSelector
+	 */
 	public FileSelector()
 	{
 		textField = new JTextField();
@@ -35,6 +51,10 @@ public class FileSelector extends JPanel implements ActionListener
 		layout.setVerticalGroup(vertical);
 	}
 	
+	/**
+	 * Returns the filename entered in the text box
+	 * @return the filename entered in the text box
+	 */
 	public String getText()
 	{
 		return textField.getText();
